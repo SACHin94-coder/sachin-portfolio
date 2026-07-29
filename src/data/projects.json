@@ -1,0 +1,35 @@
+[
+  {
+    "id": "trailhead",
+    "title": "Trailhead",
+    "description": "A trip-planning app that turns a rough itinerary into a day-by-day map. Built to learn geospatial queries and get comfortable with caching.",
+    "longDescription": "Trailhead started as a way to stop juggling five browser tabs every time I planned a trip. You drop in a rough list of places, and it works out a sensible day-by-day route, accounting for opening hours and travel time between stops. The backend indexes points of interest with PostGIS for fast nearest-neighbour queries, and the frontend caches route results so re-ordering a day doesn't mean waiting on the API again. Biggest lesson: geospatial indexing is a different mindset from typical relational queries, and it was worth the detour to learn it properly.",
+    "tags": ["React", "Node.js", "PostGIS"],
+    "codeUrl": "https://github.com/your-username/trailhead",
+    "demoUrl": "https://trailhead.example.com",
+    "status": "mature",
+    "year": "2025"
+  },
+  {
+    "id": "understory",
+    "title": "Understory",
+    "description": "A markdown-first notes tool with local-first sync. Started as a weekend build, kept growing because I actually use it daily.",
+    "longDescription": "Understory is a notes app for people who think in markdown. Everything is stored locally first using IndexedDB, so it works offline by default, and changes merge using a simple CRDT so the same notes stay consistent across a couple of devices without a central server owning the data. What began as a weekend experiment in local-first architecture is now the app I actually take notes in every day, which is the best sign a side project is worth continuing.",
+    "tags": ["TypeScript", "IndexedDB", "CRDT"],
+    "codeUrl": "https://github.com/your-username/understory",
+    "demoUrl": "https://understory.example.com",
+    "status": "growing",
+    "year": "2026"
+  },
+  {
+    "id": "canopy-cli",
+    "title": "Canopy CLI",
+    "description": "A small command-line tool for scaffolding React projects with sensible defaults, so new ideas take minutes to start, not hours.",
+    "longDescription": "Canopy CLI is a scaffolding tool I built because I was tired of re-configuring the same Vite + ESLint + folder structure every time I started a new React idea. Written in Rust for a fast, dependency-free binary, it asks a handful of questions and generates a ready-to-run project in seconds. It taught me a lot about designing a good CLI interaction flow, and about Rust's file-system and templating ecosystem.",
+    "tags": ["Rust", "CLI"],
+    "codeUrl": "https://github.com/your-username/canopy-cli",
+    "demoUrl": "",
+    "status": "mature",
+    "year": "2024"
+  }
+]

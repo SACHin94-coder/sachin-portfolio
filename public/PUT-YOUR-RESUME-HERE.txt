@@ -1,0 +1,7 @@
+Replace this file by adding your actual resume here, named exactly:
+
+  resume.pdf
+
+The "Download CV" buttons in the site link to /resume.pdf, so as long as your
+file is named resume.pdf and placed in this `public/` folder, it will work
+automatically — no code changes needed.
