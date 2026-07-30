@@ -1,0 +1,113 @@
+# ==============================================================================
+# 1. DEPENDENCIES & PACKAGES
+# ==============================================================================
+# Node / Frontend / Backend packages
+node_modules/
+jspm_packages/
+web_modules/
+
+# Python dependencies
+venv/
+.venv/
+env/
+.env/
+ENV/
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# PHP dependencies
+vendor/
+
+# Ruby dependencies
+.bundle/
+vendor/bundle/
+
+# ==============================================================================
+# 2. ENVIRONMENT VARIABLES & SECRETS (CRITICAL FOR SECURITY)
+# ==============================================================================
+# Keep API keys, DB passwords, and tokens out of version control
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+!.env.example
+
+# Serverless secrets
+.serverless/
+.amplify/
+
+# ==============================================================================
+# 3. BUILD OUTPUTS & CACHES
+# ==============================================================================
+# Production builds
+dist/
+build/
+out/
+.next/
+.nuxt/
+.docusaurus/
+
+# Caches
+.eslintcache
+.stylelintcache
+.prettiercache
+.turbo/
+.parcel-cache/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python compiled files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================================================================
+# 4. DATABASES & LOCAL STORAGE
+# ==============================================================================
+# SQLite
+*.db
+*.sqlite3
+
+# Local Docker / Database data directories
+.docker/
+docker-data/
+pgdata/
+mysql-data/
+
+# ==============================================================================
+# 5. OS & IDE TEMPORARY FILES
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Ehthumbs.db
+Desktop.ini
+
+# IDEs & Editors
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

@@ -16,7 +16,7 @@ export default function About() {
           </p>
         </div>
         <ul className="about-stats">
-          <li><span className="stat-num">3+</span><span className="stat-label">years writing code</span></li>
+          <li><span className="stat-num">1+</span><span className="stat-label">years writing code</span></li>
           <li><span className="stat-num">10+</span><span className="stat-label">shipped projects</span></li>
           <li><span className="stat-num">1</span><span className="stat-label">grove, always growing</span></li>
         </ul>

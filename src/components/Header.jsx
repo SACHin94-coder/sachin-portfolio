@@ -5,7 +5,7 @@ export default function Header() {
     <header className="site-header">
       <div className="wrap header-inner">
         <Link to="/" className="wordmark">
-          your name<span className="wordmark-dot">.</span>
+          Sachin Sahani<span className="wordmark-dot">.</span>
         </Link>
         <nav className="nav-links">
           <NavLink to="/" end className={({ isActive }) => (isActive ? 'nav-active' : '')}>
@@ -20,7 +20,7 @@ export default function Header() {
           <a href="/#contact">Contact</a>
         </nav>
         {/* Put your resume file at public/resume.pdf and this button will serve it */}
-        <a className="btn-resume" href="/resume.pdf" download>
+        <a className="btn-resume" href="/Sachin_CS_v3.pdf" target="_blank" rel="noreferrer">
           Download CV
         </a>
       </div>

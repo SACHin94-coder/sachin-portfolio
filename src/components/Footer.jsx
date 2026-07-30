@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="wrap footer-bottom">
-        <span>© {year} your name. Built with React.</span>
+        <span>© {year} Sachin Sahani. Built with React.</span>
       </div>
     </footer>
   )
