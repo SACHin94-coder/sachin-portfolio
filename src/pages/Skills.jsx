@@ -1,7 +1,5 @@
 import skillGroups from '../data/skills.json'
 
-const RADII = ['organic-1', 'organic-2', 'organic-3']
-
 export default function Skills() {
   return (
     <section className="skills-page">
@@ -13,8 +11,8 @@ export default function Skills() {
         </p>
 
         <div className="skills-grid">
-          {skillGroups.map((group, i) => (
-            <div key={group.category} className={`skill-card radius-${RADII[i % RADII.length]}`}>
+          {skillGroups.map((group) => (
+            <div key={group.category} className="skill-card">
               <h3 className="skill-category">{group.category}</h3>
               <ul className="skill-pills">
                 {group.skills.map((skill) => (

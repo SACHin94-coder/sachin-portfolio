@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom'
 import { useProjects } from '../context/ProjectsContext.jsx'
 import AddProjectModal from '../components/AddProjectModal.jsx'
-
-const RADII = ['organic-1', 'organic-2', 'organic-3']
+import ProjectThumb from '../components/ProjectThumb.jsx'
+import TechBadge from '../components/TechBadge.jsx'
+import GrowingTree from '../components/GrowingTree.jsx'
 
 export default function ProjectsList() {
   const { allProjects, plantedIds, removeProject, addProject, modalOpen, setModalOpen } =
     useProjects()
+
+  const categories = [...new Set(allProjects.map((p) => p.category).filter(Boolean))]
 
   return (
     <section className="projects-page">
@@ -19,20 +22,21 @@ export default function ProjectsList() {
           where to try it yourself.
         </p>
 
+        <GrowingTree categories={categories} />
+
         <div className="box-grid">
           {allProjects.map((project, i) => (
-            <div key={project.id} className={`project-box radius-${RADII[i % RADII.length]}`}>
+            <div key={project.id} className="project-box">
               <Link to={`/projects/${project.id}`} className="project-box-link">
+                <ProjectThumb project={project} />
                 <div className="project-box-top">
-                  <h3>{project.title}</h3>
-                  {project.status === 'growing' && (
-                    <span className="status-pill">still growing</span>
-                  )}
+                  <h3>{project.name}</h3>
+                  {project.status && <span className="status-pill">{project.status}</span>}
                 </div>
                 <p>{project.description}</p>
-                <ul className="project-tags">
-                  {project.tags?.slice(0, 3).map((tag) => (
-                    <li key={tag}>{tag}</li>
+                <ul className="tech-badge-list">
+                  {project.tools?.slice(0, 4).map((tool) => (
+                    <li key={tool}><TechBadge name={tool} /></li>
                   ))}
                 </ul>
                 <span className="teaser-arrow">Open project →</span>
@@ -42,7 +46,7 @@ export default function ProjectsList() {
                 <button
                   className="project-remove"
                   onClick={() => removeProject(project.id)}
-                  aria-label={`Remove ${project.title}`}
+                  aria-label={`Remove ${project.name}`}
                 >
                   Uproot
                 </button>

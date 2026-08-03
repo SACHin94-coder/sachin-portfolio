@@ -23,7 +23,7 @@ export default function Home() {
           <div className="teaser-grid">
             {preview.map((project) => (
               <Link key={project.id} to={`/projects/${project.id}`} className="teaser-card">
-                <h3>{project.title}</h3>
+                <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <span className="teaser-arrow">View project →</span>
               </Link>

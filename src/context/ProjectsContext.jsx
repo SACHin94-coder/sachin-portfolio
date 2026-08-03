@@ -23,7 +23,7 @@ export function ProjectsProvider({ children }) {
   }
 
   const addProject = (project) => {
-    const slug = project.title
+    const slug = project.name
       .toLowerCase()
       .trim()
       .replace(/[^a-z0-9]+/g, '-')
@@ -42,7 +42,7 @@ export function ProjectsProvider({ children }) {
   const allProjects = [...SEED_PROJECTS, ...plantedProjects]
   const plantedIds = plantedProjects.map((p) => p.id)
 
-  const getProjectById = (id) => allProjects.find((p) => p.id === id)
+  const getProjectById = (id) => allProjects.find((p) => String(p.id) === String(id))
 
   return (
     <ProjectsContext.Provider

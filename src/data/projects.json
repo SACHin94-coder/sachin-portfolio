@@ -1,35 +1,564 @@
 [
   {
-    "id": "trailhead",
-    "title": "Trailhead",
-    "description": "A trip-planning app that turns a rough itinerary into a day-by-day map. Built to learn geospatial queries and get comfortable with caching.",
-    "longDescription": "Trailhead started as a way to stop juggling five browser tabs every time I planned a trip. You drop in a rough list of places, and it works out a sensible day-by-day route, accounting for opening hours and travel time between stops. The backend indexes points of interest with PostGIS for fast nearest-neighbour queries, and the frontend caches route results so re-ordering a day doesn't mean waiting on the API again. Biggest lesson: geospatial indexing is a different mindset from typical relational queries, and it was worth the detour to learn it properly.",
-    "tags": ["React", "Node.js", "PostGIS"],
-    "codeUrl": "https://github.com/your-username/trailhead",
-    "demoUrl": "https://trailhead.example.com",
-    "status": "mature",
-    "year": "2025"
+    "id": 1,
+    "name": "Todo List",
+    "images": [],
+    "description": "A modern task management application with a clean UI/UX. Users can manage daily tasks, track completed and pending tasks, and view motivational quotes.",
+    "category": "Productivity",
+    "buildYear": 2024,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Google Fonts"
+    ],
+    "features": [
+      "Task Management",
+      "Task Counter",
+      "Completed/Pending Status",
+      "Motivational Quotes",
+      "Responsive UI"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Cloud Sync",
+      "Dark Mode",
+      "Task Reminder",
+      "Authentication"
+    ],
+    "changeHistory": [
+      {
+        "date": "2024-07-15",
+        "commit": "Initial project creation"
+      }
+    ]
   },
   {
-    "id": "understory",
-    "title": "Understory",
-    "description": "A markdown-first notes tool with local-first sync. Started as a weekend build, kept growing because I actually use it daily.",
-    "longDescription": "Understory is a notes app for people who think in markdown. Everything is stored locally first using IndexedDB, so it works offline by default, and changes merge using a simple CRDT so the same notes stay consistent across a couple of devices without a central server owning the data. What began as a weekend experiment in local-first architecture is now the app I actually take notes in every day, which is the best sign a side project is worth continuing.",
-    "tags": ["TypeScript", "IndexedDB", "CRDT"],
-    "codeUrl": "https://github.com/your-username/understory",
-    "demoUrl": "https://understory.example.com",
-    "status": "growing",
-    "year": "2026"
+    "id": 2,
+    "name": "MediaCraft - Photo & Video Editor",
+    "images": [],
+    "description": "A browser-based media editor supporting image and basic video editing with multiple filters and transformation tools.",
+    "category": "Multimedia",
+    "buildYear": 2024,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Canvas API"
+    ],
+    "features": [
+      "Image Upload",
+      "Video Upload",
+      "Filters",
+      "Brightness",
+      "Contrast",
+      "Saturation",
+      "Blur",
+      "Grayscale",
+      "Sepia",
+      "Invert",
+      "Hue Rotate",
+      "Download Edited File"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": true,
+    "futureScope": [
+      "AI Image Enhancement",
+      "Background Removal",
+      "Video Trimming",
+      "Face Filters"
+    ],
+    "changeHistory": [
+      {
+        "date": "2024-10-20",
+        "commit": "Added image filters"
+      },
+      {
+        "date": "2024-11-05",
+        "commit": "Added video editing support"
+      }
+    ]
   },
   {
-    "id": "canopy-cli",
-    "title": "Canopy CLI",
-    "description": "A small command-line tool for scaffolding React projects with sensible defaults, so new ideas take minutes to start, not hours.",
-    "longDescription": "Canopy CLI is a scaffolding tool I built because I was tired of re-configuring the same Vite + ESLint + folder structure every time I started a new React idea. Written in Rust for a fast, dependency-free binary, it asks a handful of questions and generates a ready-to-run project in seconds. It taught me a lot about designing a good CLI interaction flow, and about Rust's file-system and templating ecosystem.",
-    "tags": ["Rust", "CLI"],
-    "codeUrl": "https://github.com/your-username/canopy-cli",
-    "demoUrl": "",
-    "status": "mature",
-    "year": "2024"
+    "id": 3,
+    "name": "Notes Writing App",
+    "images": [],
+    "description": "A digital notebook for writing stories, daily journals, habits, and personal notes with a clean interface.",
+    "category": "Productivity",
+    "buildYear": 2025,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Create Notes",
+      "Edit Notes",
+      "Delete Notes",
+      "Simple UI"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Rich Text Editor",
+      "Markdown Support",
+      "Cloud Backup"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-01-12",
+        "commit": "Project completed"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "MofuMovie",
+    "images": [],
+    "description": "Movie search website with an attractive UI that loads movie information from external JSON files.",
+    "category": "Entertainment",
+    "buildYear": 2024,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON"
+    ],
+    "features": [
+      "Movie Search",
+      "Movie Cards",
+      "Movie Details",
+      "External JSON Handling"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": true,
+    "futureScope": [
+      "TMDB API",
+      "Watchlist",
+      "Ratings",
+      "Reviews"
+    ],
+    "changeHistory": [
+      {
+        "date": "2024-12-01",
+        "commit": "Initial release"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Morse Code Translator",
+    "images": [],
+    "description": "A utility that converts plain text into Morse code and vice versa.",
+    "category": "Utility",
+    "buildYear": 2024,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Text to Morse",
+      "Morse to Text",
+      "Copy Output"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Audio Playback",
+      "Speech Recognition"
+    ],
+    "changeHistory": [
+      {
+        "date": "2024-09-15",
+        "commit": "Initial version"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Black Signal",
+    "images": [],
+    "description": "A modern dating profile dashboard with visually appealing UI and responsive design.",
+    "category": "UI Design",
+    "buildYear": 2025,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Profile Cards",
+      "Responsive Layout",
+      "Animations"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Authentication",
+      "Real-time Chat",
+      "Profile Matching"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-03-08",
+        "commit": "Dashboard UI completed"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Instagram Dashboard Clone",
+    "images": [],
+    "description": "Frontend clone of Instagram dashboard implementing responsive layouts and reusable UI components.",
+    "category": "Frontend Clone",
+    "buildYear": 2025,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "JSON",
+      "Google Fonts"
+    ],
+    "features": [
+      "Stories",
+      "Posts",
+      "Sidebar",
+      "Responsive Design"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Firebase",
+      "Messaging",
+      "Likes & Comments"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-05-14",
+        "commit": "Clone completed"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Blogger Website",
+    "images": [],
+    "description": "A full-stack blogging platform built with React and MongoDB supporting CRUD operations.",
+    "category": "Full Stack",
+    "buildYear": 2025,
+    "tools": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "MongoDB"
+    ],
+    "features": [
+      "Authentication",
+      "Create Blog",
+      "Edit Blog",
+      "Delete Blog",
+      "Responsive UI"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": true,
+    "futureScope": [
+      "Comments",
+      "Bookmarks",
+      "Search",
+      "Markdown"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-06-01",
+        "commit": "Initial MERN version"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Pokemon Card Flip Game",
+    "images": [],
+    "description": "Memory card matching game featuring Pokémon cards.",
+    "category": "Game",
+    "buildYear": 2025,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Card Flip",
+      "Score",
+      "Timer",
+      "Restart"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Levels",
+      "Leaderboard"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-02-18",
+        "commit": "Game completed"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Modern Calculator",
+    "images": [],
+    "description": "Calculator application with clean UI and responsive layout.",
+    "category": "Utility",
+    "buildYear": 2025,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Basic Arithmetic",
+      "Responsive Design"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Scientific Mode",
+      "History"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-01-22",
+        "commit": "Calculator completed"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Blast The Bubble",
+    "images": [],
+    "description": "A bubble popping game built using JavaScript with score tracking and timer.",
+    "category": "Game",
+    "buildYear": 2025,
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "features": [
+      "Score",
+      "Timer",
+      "Random Bubble Generation"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Levels",
+      "Difficulty Modes"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-02-05",
+        "commit": "Game completed"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "React Mini Projects Collection",
+    "images": [],
+    "description": "Collection of 10 beginner React projects including Todo, Accordion, Profile Card, Menu Bar and state management practice.",
+    "category": "Learning",
+    "buildYear": 2025,
+    "tools": [
+      "React",
+      "Zustand"
+    ],
+    "features": [
+      "Todo",
+      "Accordion",
+      "Navbar",
+      "Profile Card",
+      "State Management"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Redux Version",
+      "TypeScript"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-04-02",
+        "commit": "Practice collection finished"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Health Data Visualization",
+    "images": [],
+    "description": "Dashboard for monitoring and visualizing user health records with charts and historical analysis.",
+    "category": "Healthcare",
+    "buildYear": 2025,
+    "tools": [
+      "React"
+    ],
+    "features": [
+      "Dashboard",
+      "History",
+      "Charts",
+      "Health Records"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": true,
+    "futureScope": [
+      "AI Health Prediction",
+      "Authentication",
+      "Wearable Integration"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-07-12",
+        "commit": "Dashboard completed"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "GPT-3 Information Website",
+    "images": [],
+    "description": "Landing page showcasing GPT-3 features with modern React UI and responsive design.",
+    "category": "Landing Page",
+    "buildYear": 2025,
+    "tools": [
+      "React"
+    ],
+    "features": [
+      "Landing Page",
+      "Responsive UI",
+      "Animations"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": false,
+    "futureScope": [
+      "Dark Theme",
+      "CMS Integration"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-05-25",
+        "commit": "Landing page completed"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "React Movie Search",
+    "images": [],
+    "description": "Movie search application using React with API integration, movie dashboard, detailed pages, and episode information.",
+    "category": "Entertainment",
+    "buildYear": 2025,
+    "tools": [
+      "React",
+      "REST API"
+    ],
+    "features": [
+      "Movie Search",
+      "Movie Details",
+      "Episodes",
+      "API Integration"
+    ],
+    "status": "Completed",
+    "isActive": true,
+    "hasLiveLink": false,
+    "liveLink": "",
+    "hasGitHub": false,
+    "github": "",
+    "isModified": true,
+    "futureScope": [
+      "Favorites",
+      "Recommendations",
+      "User Login"
+    ],
+    "changeHistory": [
+      {
+        "date": "2025-08-03",
+        "commit": "API integration completed"
+      }
+    ]
   }
 ]
