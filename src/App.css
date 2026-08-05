@@ -660,14 +660,7 @@
   margin: 0;
 }
 
-.skill-pills li {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  background: rgba(63, 92, 65, 0.12);
-  color: var(--moss);
-  padding: 7px 14px;
-  border-radius: 999px;
-}
+
 
 /* ============ PROJECT DETAIL PAGE ============ */
 .detail-page {

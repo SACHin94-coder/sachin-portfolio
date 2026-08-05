@@ -1,3 +1,4 @@
+import TechBadge from '../components/TechBadge'
 import skillGroups from '../data/skills.json'
 
 export default function Skills() {
@@ -16,7 +17,7 @@ export default function Skills() {
               <h3 className="skill-category">{group.category}</h3>
               <ul className="skill-pills">
                 {group.skills.map((skill) => (
-                  <li key={skill}>{skill}</li>
+                  <li key={skill}><TechBadge name={skill} /></li>
                 ))}
               </ul>
             </div>
