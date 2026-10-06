@@ -20,7 +20,7 @@ export default function Header() {
           <a href="/#contact">Contact</a>
         </nav>
         {/* Put your resume file at public/resume.pdf and this button will serve it */}
-        <a className="btn-resume" href="/Sachin_CS_v3.pdf" target="_blank" rel="noreferrer">
+        <a className="btn-resume">
           Download CV
         </a>
       </div>

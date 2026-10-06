@@ -16,6 +16,8 @@ import {
   SiGit,
   SiGithub,
   SiGooglefonts,
+  SiC,
+  SiCplusplus,
 } from 'react-icons/si'
 import { FaJava, FaCode } from 'react-icons/fa6'
 
@@ -33,7 +35,7 @@ const TECH_ICONS = {
   MongoDB: { icon: SiMongodb, color: '#47A248' },
   JSON: { icon: SiJson, color: '#B2B2B2' },
   'Node.js': { icon: SiNodedotjs, color: '#5FA04E' },
-  Express: { icon: SiExpress, color: '#E8E8E8' },
+  Express: { icon: SiExpress, color: '#010101' },
   JWT: { icon: SiJsonwebtokens, color: '#D63AFF' },
   Redis: { icon: SiRedis, color: '#FF4438' },
   Docker: { icon: SiDocker, color: '#2496ED' },
@@ -42,6 +44,7 @@ const TECH_ICONS = {
   GitHub: { icon: SiGithub, color: '#E8E8E8' },
   'Google Fonts': { icon: SiGooglefonts, color: '#4285F4' },
   Java: { icon: FaJava, color: '#E76F00' },
+  "C&C++": { icon: SiCplusplus, color: '2496ED' }
 }
 
 export function getTechIcon(name) {
